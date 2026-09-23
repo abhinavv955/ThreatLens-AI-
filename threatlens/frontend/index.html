@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ThreatLens AI — See the Threat. Understand the Risk.</title>
+  <meta name="description" content="AI-Powered Network Security Intelligence Platform. Analyze traffic, detect threats, and calculate dynamic risk with explainable ML." />
+  <link rel="icon" type="image/svg+xml" href="/static/img/logo.svg" />
+
+  <!-- Design System CSS -->
+  <link rel="stylesheet" href="/static/css/tokens.css" />
+  <link rel="stylesheet" href="/static/css/layout.css" />
+  <link rel="stylesheet" href="/static/css/components.css" />
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+<body>
+
+  <!-- Top Navigation Architecture -->
+  <header class="top-nav">
+    <!-- Brand / Logo -->
+    <div class="brand-container" id="brand-logo-btn">
+      <div class="brand-icon">
+        <img src="/static/img/logo.svg" alt="ThreatLens AI" />
+      </div>
+      <div class="brand-text">
+        <span class="brand-name">ThreatLens AI</span>
+        <span class="brand-tagline">See the Threat. Understand the Risk.</span>
+      </div>
+    </div>
+
+    <!-- Center Navigation Links -->
+    <nav>
+      <ul class="nav-links">
+        <li class="nav-item"><a class="nav-link" data-view="dashboard">Overview</a></li>
+        <li class="nav-item"><a class="nav-link" data-view="analyze">Analyze</a></li>
+        <li class="nav-item"><a class="nav-link" data-view="monitor">Monitor</a></li>
+        <li class="nav-item"><a class="nav-link" data-view="events">Events</a></li>
+        <li class="nav-item"><a class="nav-link" data-view="alerts">Alerts</a></li>
+        <li class="nav-item"><a class="nav-link" data-view="analytics">Analytics</a></li>
+        <li class="nav-item"><a class="nav-link" data-view="laboratory">Laboratory</a></li>
+        <li class="nav-item"><a class="nav-link" data-view="models">Models</a></li>
+        <li class="nav-item"><a class="nav-link" data-view="reports">Briefs</a></li>
+        <li class="nav-item"><a class="nav-link" data-view="advisor">Advisor</a></li>
+        <li class="nav-item"><a class="nav-link" data-view="settings">Control</a></li>
+      </ul>
+    </nav>
+
+    <!-- Right Controls -->
+    <div class="nav-controls">
+      <div class="system-status-badge">
+        <span class="status-dot"></span>
+        <span>System</span>
+      </div>
+
+      <div class="active-model-chip" id="header-model-chip" title="Active Intelligence Model">
+        <span style="width: 6px; height: 6px; border-radius: 50%; background: #a78bfa;"></span>
+        <span>RF v1.0.0</span>
+      </div>
+
+      <button class="alert-bell-btn" id="btn-header-alerts" title="View Threat Alerts">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/>
+          <path d="M13.73 21a2 2 0 0 1-3.46 0"/>
+        </svg>
+        <span class="alert-counter-badge" id="unread-alert-count" style="display: none;">0</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Main View Container -->
+  <main class="app-container" id="main-view-container">
+    <div style="text-align: center; padding: 4rem; color: var(--text-subtle);">
+      Initializing ThreatLens AI Security Intelligence Console...
+    </div>
+  </main>
+
+  <!-- Mobile Bottom Navigation Bar -->
+  <nav class="mobile-bottom-nav">
+    <a class="mobile-nav-item" data-view="dashboard">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+      <span>Overview</span>
+    </a>
+    <a class="mobile-nav-item" data-view="analyze">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m10 15 5-3-5-3v6z"/></svg>
+      <span>Analyze</span>
+    </a>
+    <a class="mobile-nav-item" data-view="monitor">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+      <span>Monitor</span>
+    </a>
+    <a class="mobile-nav-item" data-view="alerts">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+      <span>Alerts</span>
+    </a>
+    <a class="mobile-nav-item" data-view="more">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="18" x2="20" y2="18"/></svg>
+      <span>More</span>
+    </a>
+  </nav>
+
+  <!-- Toast Container -->
+  <div id="toast-container" class="toast-container"></div>
+
+  <!-- App Main Entrypoint Script -->
+  <script type="module" src="/static/js/app.js"></script>
+</body>
+</html>
