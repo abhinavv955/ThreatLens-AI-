@@ -31,12 +31,14 @@ The platform allows users to:
 
 > **Academic Project · 2026**
 
-| Name             | Contribution                                   |
-| ---------------- | ---------------------------------------------- |
-| **Abinav V.P**   | Machine Learning, Backend & System Integration |
-| **Bhupesh More** | Frontend, UI/UX & Testing                      |
-
+| Name                                              |
+| ---------------- 
+| **Abinav V.P**   
+| **Bhupesh More** 
+   Dhurv Patil
+   
 ---
+
 
 ## ✨ Features
 
